@@ -1,0 +1,153 @@
+body{
+	background: #f1f1e8;
+	font-family: 'Playfair Display', serif;
+	color:#00334e;
+	font-size: 17px;
+	line-height:2;
+}
+h1, h2 {
+	color: #206a5d;
+	font-family: 'Amatic SC', cursive;
+	font-size: 32px;
+	font-weight: bold;
+	line-height:normal;
+	letter-spacing: 1px;
+	background: #bfdcae;
+	text-align: center;
+	width: 315px;
+	margin: 10px auto;
+	padding:5px;
+	border-radius: 4px;
+}
+a{
+	color: #81b214; /*vert pomme*/
+	text-decoration:none;
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	text-align: center;
+}
+a:hover{
+	color: #bfdcae; /*vert d'eau*/
+}
+
+i{
+	margin: 10px;
+}
+
+/* Custom design with class */
+
+.container {
+  width: 1000px;
+  margin: 40px auto;
+}
+
+.card-white {
+	border-radius: 40px;
+	background: white;
+	box-shadow: 0px 10px 30px rgba(0,0,0,.1);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding:30px;
+	margin: 20px 0px;
+	text-align: justify;
+}
+
+.img-circle {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	margin:10px;
+	display: flex;
+	margin: 0px auto;
+	object-fit: cover;
+}
+
+
+.btn-green{
+	text-align: center;
+}
+
+
+.btn-green a:hover {
+	background-color: #bfdcae;
+	color: white;
+}
+
+.btn-green a {
+	color: white;
+	background-color: #81b214;
+	padding: 10px 10px;
+	border-radius: 40px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.list-inline {
+	list-style: none;
+	padding-left: 0px;
+	text-align: center;
+}
+
+.list-inline li {
+	display:inline;
+	padding: 10px;
+}
+.list-inline i {
+	font-size: 30px;
+	align-items:center;
+}
+
+.list-inline i:hover {
+	color:#bfdcae;
+}
+
+#introduction p {
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+}
+
+.content-intro {
+	display:flex;
+	margin:0px auto;
+}
+
+/* Responsive design */
+
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+  .list-responsive li{
+  display: inline-table;
+  }
+}
+@media (max-width: 720px) {
+  .container {
+    width: 550px;
+  }
+    .list-responsive li{
+	display: inline-table;
+	}
+	.content-intro {
+  	display: block;
+  }
+  #introduction p {
+  	text-align: justify;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    width: 410px;
+  }
+  .content-intro {
+  	display: block;
+  }
+  #introduction p {
+  	text-align: justify;
+  }
+  .list-responsive li{
+	display: list-item;
+  }
+}
